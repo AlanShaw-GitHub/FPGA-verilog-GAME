@@ -1,0 +1,99 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Tue Jan  2 20:43:19 2018
+| Host         : DESKTOP-RQOG6G3 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    30 |
+| Unused register locations in slices containing registers |   109 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             140 |           68 |
+| No           | No                    | Yes                    |              23 |            7 |
+| No           | Yes                   | No                     |              61 |           24 |
+| Yes          | No                    | No                     |              61 |           17 |
+| Yes          | No                    | Yes                    |              10 |            5 |
+| Yes          | Yes                   | No                     |             140 |           48 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------+------------------------------------------------------+---------------------------------------------------+------------------+----------------+
+|          Clock Signal          |                     Enable Signal                    |                  Set/Reset Signal                 | Slice Load Count | Bel Load Count |
++--------------------------------+------------------------------------------------------+---------------------------------------------------+------------------+----------------+
+|  choice_reg[0]/G0              |                                                      |                                                   |                1 |              1 |
+|  choice_reg[1]/G0              |                                                      |                                                   |                1 |              1 |
+|  clk_i_IBUF_BUFG               | acceleration/Cmd_Reg[0]_7                            | acceleration/Cmd_Reg[0][6]_i_1_n_0                |                1 |              4 |
+|  clk_i_IBUF_BUFG               | acceleration/Enable_Sum                              | acceleration/Reset_Cnt_Num_Reads                  |                1 |              4 |
+|  clk_i_IBUF_BUFG               | acceleration/FSM_sequential_StC_Adxl_Ctrl[3]_i_1_n_0 | acceleration/SR[0]                                |                1 |              4 |
+| ~status_BUFG                   | acceleration/position_y_reg[1]_0                     |                                                   |                3 |              4 |
+|  clk_i_IBUF_BUFG               | acceleration/Cmd_Reg[1][6]_i_2_n_0                   | acceleration/Cmd_Reg[1]0_in[7]                    |                2 |              5 |
+|  clk_i_IBUF_BUFG               |                                                      | acceleration/SPI_Interface/SCLK_2X_DIV[5]_i_1_n_0 |                2 |              6 |
+|  clk_i_IBUF_BUFG               | acceleration/Cmd_Reg[2][6]_i_2_n_0                   | acceleration/Cmd_Reg[2][6]_i_1_n_0                |                1 |              6 |
+| ~status_BUFG                   | acceleration/position_y_reg[1]_0                     | acceleration/position_y_reg[9]_16                 |                4 |              6 |
+|  clk_i_IBUF_BUFG               | acceleration/Shift_Cmd_Reg                           | acceleration/SR[0]                                |                4 |              7 |
+|  clk_i_IBUF_BUFG               | acceleration/SPI_Interface/MOSI_REG[7]_i_1_n_0       |                                                   |                2 |              7 |
+| ~status_BUFG                   | acceleration/position_x_reg[1]_0                     | acceleration/position_y_reg[9]_16                 |                5 |              7 |
+|  clk_i_IBUF_BUFG               | acceleration/SPI_Interface/SHIFT_TICK_IN             |                                                   |                2 |              8 |
+|  clk_i_IBUF_BUFG               | acceleration/SPI_Interface/DONE_1_i_1_n_0            |                                                   |                1 |              8 |
+| ~status_BUFG                   |                                                      |                                                   |                5 |              9 |
+|  clk_i_IBUF_BUFG               |                                                      | acceleration/Cnt_SS_Inactive0                     |                3 |             10 |
+|  clkdiv_reg_BUFG[1]            |                                                      | acceleration/SR[0]                                |                4 |             10 |
+|  clkdiv_reg_BUFG[1]            | main/v_count                                         | acceleration/SR[0]                                |                5 |             10 |
+|  clkdiv_reg_BUFG[1]            |                                                      | main/rdn_reg_n_0                                  |                5 |             12 |
+|  clk_i_IBUF_BUFG               |                                                      | acceleration/Reset_Sample_Rate_Div                |                5 |             17 |
+|  location_reg2_reg[18]_i_2_n_0 |                                                      |                                                   |               11 |             19 |
+| ~roll_BUFG[1]                  |                                                      |                                                   |               10 |             19 |
+|  clkdiv_reg_BUFG[1]            |                                                      |                                                   |               11 |             22 |
+|  clk_i_IBUF_BUFG               |                                                      | acceleration/SR[0]                                |               12 |             29 |
+|  clk_i_IBUF_BUFG               | acceleration/Data_Ready_1                            | acceleration/SR[0]                                |               12 |             32 |
+|  clk_i_IBUF_BUFG               | acceleration/Enable_Sum                              | acceleration/ACCEL_X_SUM0                         |                8 |             32 |
+|  clkdiv_reg_BUFG[1]            | sel                                                  | clear                                             |                9 |             33 |
+|  clk_i_IBUF_BUFG               | acceleration/SPI_Interface/Shift_Data_Reg            |                                                   |               11 |             42 |
+|  clk_i_IBUF_BUFG               |                                                      |                                                   |               29 |             69 |
++--------------------------------+------------------------------------------------------+---------------------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     2 |
+| 4      |                     4 |
+| 5      |                     1 |
+| 6      |                     3 |
+| 7      |                     3 |
+| 8      |                     2 |
+| 9      |                     1 |
+| 10     |                     3 |
+| 12     |                     1 |
+| 16+    |                    10 |
++--------+-----------------------+
+
+

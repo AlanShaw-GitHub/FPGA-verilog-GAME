@@ -1,0 +1,1848 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Jan  2 20:27:18 2018
+# Process ID: 4832
+# Current directory: C:/Users/alan/Desktop/Things/logic design/game/game.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: C:/Users/alan/Desktop/Things/logic design/game/game.runs/synth_1/top.vds
+# Journal file: C:/Users/alan/Desktop/Things/logic design/game/game.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 572 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 407.160 ; gain = 102.371
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-638] synthesizing module 'bcd' [C:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/new/bcd.v:23]
+INFO: [Synth 8-256] done synthesizing module 'bcd' (1#1) [C:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/new/bcd.v:23]
+INFO: [Synth 8-638] synthesizing module 'dispnumber' [C:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/new/dispnumber.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/new/dispnumber.v:16]
+INFO: [Synth 8-226] default block is never used [C:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/new/dispnumber.v:29]
+INFO: [Synth 8-256] done synthesizing module 'dispnumber' (2#1) [C:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/new/dispnumber.v:1]
+INFO: [Synth 8-638] synthesizing module 'vgac' [C:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/new/vgac.v:1]
+INFO: [Synth 8-256] done synthesizing module 'vgac' (3#1) [C:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/new/vgac.v:1]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [c:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/ip/blk_mem_gen_0/synth/blk_mem_gen_0.vhd:72]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_AXI_SLAVE_TYPE bound to: 0 - type: integer 
+	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
+	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
+	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_MEM_TYPE bound to: 4 - type: integer 
+	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
+	Parameter C_ALGORITHM bound to: 1 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 1 - type: integer 
+	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
+	Parameter C_INIT_FILE_NAME bound to: blk_mem_gen_0.mif - type: string 
+	Parameter C_INIT_FILE bound to: blk_mem_gen_0.mem - type: string 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_HAS_RSTA bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
+	Parameter C_RSTRAM_A bound to: 0 - type: integer 
+	Parameter C_INITA_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENA bound to: 1 - type: integer 
+	Parameter C_HAS_REGCEA bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEA bound to: 0 - type: integer 
+	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_A bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_A bound to: 12 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 12 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 350000 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 350000 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 19 - type: integer 
+	Parameter C_HAS_RSTB bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
+	Parameter C_RSTRAM_B bound to: 0 - type: integer 
+	Parameter C_INITB_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENB bound to: 1 - type: integer 
+	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEB bound to: 0 - type: integer 
+	Parameter C_WEB_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_B bound to: 12 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 12 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 350000 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 350000 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 19 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 1 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_MUX_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_INPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_EN_ECC_PIPE bound to: 0 - type: integer 
+	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
+	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter C_COMMON_CLK bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
+	Parameter C_EN_SLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_USE_URAM bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
+	Parameter C_EN_DEEPSLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
+	Parameter C_COUNT_36K_BRAM bound to: 116 - type: string 
+	Parameter C_COUNT_18K_BRAM bound to: 4 - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     17.310418 mW - type: string 
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_1' declared at 'c:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/ip/hard_rom/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195313' bound to instance 'U0' of component 'blk_mem_gen_v8_4_1' [c:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/ip/blk_mem_gen_0/synth/blk_mem_gen_0.vhd:239]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_0' (14#1) [c:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/ip/blk_mem_gen_0/synth/blk_mem_gen_0.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_1' [c:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/ip/blk_mem_gen_1/synth/blk_mem_gen_1.vhd:68]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_AXI_SLAVE_TYPE bound to: 0 - type: integer 
+	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
+	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
+	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_MEM_TYPE bound to: 3 - type: integer 
+	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
+	Parameter C_ALGORITHM bound to: 1 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 1 - type: integer 
+	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
+	Parameter C_INIT_FILE_NAME bound to: blk_mem_gen_1.mif - type: string 
+	Parameter C_INIT_FILE bound to: blk_mem_gen_1.mem - type: string 
+	Parameter C_USE_DEFAULT_DATA bound to: 1 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_HAS_RSTA bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
+	Parameter C_RSTRAM_A bound to: 0 - type: integer 
+	Parameter C_INITA_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENA bound to: 1 - type: integer 
+	Parameter C_HAS_REGCEA bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEA bound to: 0 - type: integer 
+	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_A bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_A bound to: 12 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 12 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 1000 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 1000 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 10 - type: integer 
+	Parameter C_HAS_RSTB bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
+	Parameter C_RSTRAM_B bound to: 0 - type: integer 
+	Parameter C_INITB_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENB bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEB bound to: 0 - type: integer 
+	Parameter C_WEB_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_B bound to: 12 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 12 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 1000 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 1000 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 10 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_MUX_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_INPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_EN_ECC_PIPE bound to: 0 - type: integer 
+	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
+	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter C_COMMON_CLK bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
+	Parameter C_EN_SLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_USE_URAM bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
+	Parameter C_EN_DEEPSLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
+	Parameter C_COUNT_36K_BRAM bound to: 0 - type: string 
+	Parameter C_COUNT_18K_BRAM bound to: 1 - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     1.2716 mW - type: string 
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_1' declared at 'c:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/ip/hard_rom/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195313' bound to instance 'U0' of component 'blk_mem_gen_v8_4_1' [c:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/ip/blk_mem_gen_1/synth/blk_mem_gen_1.vhd:230]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_1' (15#1) [c:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/ip/blk_mem_gen_1/synth/blk_mem_gen_1.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_2' [c:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/ip/blk_mem_gen_2_1/synth/blk_mem_gen_2.vhd:68]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_AXI_SLAVE_TYPE bound to: 0 - type: integer 
+	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
+	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
+	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_MEM_TYPE bound to: 3 - type: integer 
+	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
+	Parameter C_ALGORITHM bound to: 1 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 1 - type: integer 
+	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
+	Parameter C_INIT_FILE_NAME bound to: blk_mem_gen_2.mif - type: string 
+	Parameter C_INIT_FILE bound to: blk_mem_gen_2.mem - type: string 
+	Parameter C_USE_DEFAULT_DATA bound to: 1 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_HAS_RSTA bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
+	Parameter C_RSTRAM_A bound to: 0 - type: integer 
+	Parameter C_INITA_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENA bound to: 1 - type: integer 
+	Parameter C_HAS_REGCEA bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEA bound to: 0 - type: integer 
+	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_A bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_A bound to: 12 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 12 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 9000 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 9000 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 14 - type: integer 
+	Parameter C_HAS_RSTB bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
+	Parameter C_RSTRAM_B bound to: 0 - type: integer 
+	Parameter C_INITB_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENB bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEB bound to: 0 - type: integer 
+	Parameter C_WEB_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_B bound to: 12 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 12 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 9000 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 9000 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 14 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_MUX_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_INPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_EN_ECC_PIPE bound to: 0 - type: integer 
+	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
+	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter C_COMMON_CLK bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
+	Parameter C_EN_SLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_USE_URAM bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
+	Parameter C_EN_DEEPSLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
+	Parameter C_COUNT_36K_BRAM bound to: 3 - type: string 
+	Parameter C_COUNT_18K_BRAM bound to: 2 - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     5.662334 mW - type: string 
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_1' declared at 'c:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/ip/hard_rom/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195313' bound to instance 'U0' of component 'blk_mem_gen_v8_4_1' [c:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/ip/blk_mem_gen_2_1/synth/blk_mem_gen_2.vhd:230]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_2' (16#1) [c:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/ip/blk_mem_gen_2_1/synth/blk_mem_gen_2.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_3' [c:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/ip/blk_mem_gen_3/synth/blk_mem_gen_3.vhd:68]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_AXI_SLAVE_TYPE bound to: 0 - type: integer 
+	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
+	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
+	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_MEM_TYPE bound to: 3 - type: integer 
+	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
+	Parameter C_ALGORITHM bound to: 1 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 1 - type: integer 
+	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
+	Parameter C_INIT_FILE_NAME bound to: blk_mem_gen_3.mif - type: string 
+	Parameter C_INIT_FILE bound to: blk_mem_gen_3.mem - type: string 
+	Parameter C_USE_DEFAULT_DATA bound to: 1 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_HAS_RSTA bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
+	Parameter C_RSTRAM_A bound to: 0 - type: integer 
+	Parameter C_INITA_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENA bound to: 1 - type: integer 
+	Parameter C_HAS_REGCEA bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEA bound to: 0 - type: integer 
+	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_A bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_A bound to: 12 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 12 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 10000 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 10000 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 14 - type: integer 
+	Parameter C_HAS_RSTB bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
+	Parameter C_RSTRAM_B bound to: 0 - type: integer 
+	Parameter C_INITB_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENB bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEB bound to: 0 - type: integer 
+	Parameter C_WEB_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_B bound to: 12 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 12 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 10000 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 10000 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 14 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_MUX_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_INPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_EN_ECC_PIPE bound to: 0 - type: integer 
+	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
+	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter C_COMMON_CLK bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
+	Parameter C_EN_SLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_USE_URAM bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
+	Parameter C_EN_DEEPSLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
+	Parameter C_COUNT_36K_BRAM bound to: 3 - type: string 
+	Parameter C_COUNT_18K_BRAM bound to: 2 - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     5.56159 mW - type: string 
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_1' declared at 'c:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/ip/hard_rom/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195313' bound to instance 'U0' of component 'blk_mem_gen_v8_4_1' [c:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/ip/blk_mem_gen_3/synth/blk_mem_gen_3.vhd:230]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_3' (17#1) [c:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/ip/blk_mem_gen_3/synth/blk_mem_gen_3.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'basic_rom' [c:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/ip/basic_rom/synth/basic_rom.vhd:68]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_AXI_SLAVE_TYPE bound to: 0 - type: integer 
+	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
+	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
+	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_MEM_TYPE bound to: 3 - type: integer 
+	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
+	Parameter C_ALGORITHM bound to: 1 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 1 - type: integer 
+	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
+	Parameter C_INIT_FILE_NAME bound to: basic_rom.mif - type: string 
+	Parameter C_INIT_FILE bound to: basic_rom.mem - type: string 
+	Parameter C_USE_DEFAULT_DATA bound to: 1 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_HAS_RSTA bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
+	Parameter C_RSTRAM_A bound to: 0 - type: integer 
+	Parameter C_INITA_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENA bound to: 1 - type: integer 
+	Parameter C_HAS_REGCEA bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEA bound to: 0 - type: integer 
+	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_A bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_A bound to: 12 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 12 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 2400 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 2400 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 12 - type: integer 
+	Parameter C_HAS_RSTB bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
+	Parameter C_RSTRAM_B bound to: 0 - type: integer 
+	Parameter C_INITB_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENB bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEB bound to: 0 - type: integer 
+	Parameter C_WEB_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_B bound to: 12 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 12 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 2400 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 2400 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 12 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_MUX_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_INPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_EN_ECC_PIPE bound to: 0 - type: integer 
+	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
+	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter C_COMMON_CLK bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
+	Parameter C_EN_SLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_USE_URAM bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
+	Parameter C_EN_DEEPSLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
+	Parameter C_COUNT_36K_BRAM bound to: 1 - type: string 
+	Parameter C_COUNT_18K_BRAM bound to: 1 - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     3.511199 mW - type: string 
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_1' declared at 'c:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/ip/hard_rom/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195313' bound to instance 'U0' of component 'blk_mem_gen_v8_4_1' [c:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/ip/basic_rom/synth/basic_rom.vhd:230]
+INFO: [Synth 8-256] done synthesizing module 'basic_rom' (18#1) [c:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/ip/basic_rom/synth/basic_rom.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'normal_rom' [c:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/ip/normal_rom/synth/normal_rom.vhd:68]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_AXI_SLAVE_TYPE bound to: 0 - type: integer 
+	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
+	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
+	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_MEM_TYPE bound to: 3 - type: integer 
+	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
+	Parameter C_ALGORITHM bound to: 1 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 1 - type: integer 
+	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
+	Parameter C_INIT_FILE_NAME bound to: normal_rom.mif - type: string 
+	Parameter C_INIT_FILE bound to: normal_rom.mem - type: string 
+	Parameter C_USE_DEFAULT_DATA bound to: 1 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_HAS_RSTA bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
+	Parameter C_RSTRAM_A bound to: 0 - type: integer 
+	Parameter C_INITA_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENA bound to: 1 - type: integer 
+	Parameter C_HAS_REGCEA bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEA bound to: 0 - type: integer 
+	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_A bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_A bound to: 12 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 12 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 2400 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 2400 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 12 - type: integer 
+	Parameter C_HAS_RSTB bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
+	Parameter C_RSTRAM_B bound to: 0 - type: integer 
+	Parameter C_INITB_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENB bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEB bound to: 0 - type: integer 
+	Parameter C_WEB_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_B bound to: 12 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 12 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 2400 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 2400 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 12 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_MUX_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_INPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_EN_ECC_PIPE bound to: 0 - type: integer 
+	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
+	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter C_COMMON_CLK bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
+	Parameter C_EN_SLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_USE_URAM bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
+	Parameter C_EN_DEEPSLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
+	Parameter C_COUNT_36K_BRAM bound to: 1 - type: string 
+	Parameter C_COUNT_18K_BRAM bound to: 1 - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     3.511199 mW - type: string 
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_1' declared at 'c:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/ip/hard_rom/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195313' bound to instance 'U0' of component 'blk_mem_gen_v8_4_1' [c:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/ip/normal_rom/synth/normal_rom.vhd:230]
+INFO: [Synth 8-256] done synthesizing module 'normal_rom' (19#1) [c:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/ip/normal_rom/synth/normal_rom.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'hard_rom' [c:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/ip/hard_rom/synth/hard_rom.vhd:68]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_AXI_SLAVE_TYPE bound to: 0 - type: integer 
+	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
+	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
+	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_MEM_TYPE bound to: 3 - type: integer 
+	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
+	Parameter C_ALGORITHM bound to: 1 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 1 - type: integer 
+	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
+	Parameter C_INIT_FILE_NAME bound to: hard_rom.mif - type: string 
+	Parameter C_INIT_FILE bound to: hard_rom.mem - type: string 
+	Parameter C_USE_DEFAULT_DATA bound to: 1 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_HAS_RSTA bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
+	Parameter C_RSTRAM_A bound to: 0 - type: integer 
+	Parameter C_INITA_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENA bound to: 1 - type: integer 
+	Parameter C_HAS_REGCEA bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEA bound to: 0 - type: integer 
+	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_A bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_A bound to: 12 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 12 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 2400 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 2400 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 12 - type: integer 
+	Parameter C_HAS_RSTB bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
+	Parameter C_RSTRAM_B bound to: 0 - type: integer 
+	Parameter C_INITB_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENB bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEB bound to: 0 - type: integer 
+	Parameter C_WEB_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_B bound to: 12 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 12 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 2400 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 2400 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 12 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_MUX_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_INPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_EN_ECC_PIPE bound to: 0 - type: integer 
+	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
+	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter C_COMMON_CLK bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
+	Parameter C_EN_SLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_USE_URAM bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
+	Parameter C_EN_DEEPSLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
+	Parameter C_COUNT_36K_BRAM bound to: 1 - type: string 
+	Parameter C_COUNT_18K_BRAM bound to: 1 - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     3.511199 mW - type: string 
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_1' declared at 'c:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/ip/hard_rom/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195313' bound to instance 'U0' of component 'blk_mem_gen_v8_4_1' [c:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/ip/hard_rom/synth/hard_rom.vhd:230]
+INFO: [Synth 8-256] done synthesizing module 'hard_rom' (20#1) [c:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/ip/hard_rom/synth/hard_rom.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'ADXL362Ctrl' [C:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/new/ADXL362Ctrl.vhd:117]
+	Parameter SYSCLK_FREQUENCY_HZ bound to: 100000000 - type: integer 
+	Parameter SCLK_FREQUENCY_HZ bound to: 1000000 - type: integer 
+	Parameter NUM_READS_AVG bound to: 16 - type: integer 
+	Parameter UPDATE_FREQUENCY_HZ bound to: 1000 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "USER" *) [C:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/new/ADXL362Ctrl.vhd:283]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "USER" *) [C:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/new/ADXL362Ctrl.vhd:312]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "USER" *) [C:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/new/ADXL362Ctrl.vhd:365]
+	Parameter SYSCLK_FREQUENCY_HZ bound to: 100000000 - type: integer 
+	Parameter SCLK_FREQUENCY_HZ bound to: 1000000 - type: integer 
+INFO: [Synth 8-3491] module 'SPI_If' declared at 'C:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/new/SPI_If.vhd:42' bound to instance 'SPI_Interface' of component 'SPI_If' [C:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/new/ADXL362Ctrl.vhd:373]
+INFO: [Synth 8-638] synthesizing module 'SPI_If' [C:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/new/SPI_If.vhd:66]
+	Parameter SYSCLK_FREQUENCY_HZ bound to: 100000000 - type: integer 
+	Parameter SCLK_FREQUENCY_HZ bound to: 1000000 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "USER" *) [C:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/new/SPI_If.vhd:113]
+INFO: [Synth 8-256] done synthesizing module 'SPI_If' (21#1) [C:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/new/SPI_If.vhd:66]
+INFO: [Synth 8-256] done synthesizing module 'ADXL362Ctrl' (22#1) [C:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/new/ADXL362Ctrl.vhd:117]
+INFO: [Synth 8-256] done synthesizing module 'top' (23#1) [C:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/new/top.v:23]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized120 has unconnected port SSRA
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized120 has unconnected port CLKB
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized120 has unconnected port SSRB
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized120 has unconnected port ENB
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized120 has unconnected port REGCEB
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized120 has unconnected port WEB[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized120 has unconnected port ADDRB[11]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized120 has unconnected port ADDRB[10]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized120 has unconnected port ADDRB[9]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized120 has unconnected port ADDRB[8]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized120 has unconnected port ADDRB[7]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized120 has unconnected port ADDRB[6]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized120 has unconnected port ADDRB[5]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized120 has unconnected port ADDRB[4]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized120 has unconnected port ADDRB[3]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized120 has unconnected port ADDRB[2]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized120 has unconnected port ADDRB[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized120 has unconnected port ADDRB[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized120 has unconnected port DINB[8]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized120 has unconnected port DINB[7]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized120 has unconnected port DINB[6]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized120 has unconnected port DINB[5]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized120 has unconnected port DINB[4]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized120 has unconnected port DINB[3]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized120 has unconnected port DINB[2]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized120 has unconnected port DINB[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized120 has unconnected port DINB[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized120 has unconnected port SLEEP
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized120 has unconnected port INJECTSBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized120 has unconnected port INJECTDBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized120 has unconnected port ECCPIPECE
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized120 has unconnected port ram_rstram_b
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized120 has unconnected port ram_rstreg_b
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized119 has unconnected port SSRA
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized119 has unconnected port CLKB
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized119 has unconnected port SSRB
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized119 has unconnected port ENB
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized119 has unconnected port REGCEB
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized119 has unconnected port WEB[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized119 has unconnected port ADDRB[11]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized119 has unconnected port ADDRB[10]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized119 has unconnected port ADDRB[9]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized119 has unconnected port ADDRB[8]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized119 has unconnected port ADDRB[7]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized119 has unconnected port ADDRB[6]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized119 has unconnected port ADDRB[5]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized119 has unconnected port ADDRB[4]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized119 has unconnected port ADDRB[3]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized119 has unconnected port ADDRB[2]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized119 has unconnected port ADDRB[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized119 has unconnected port ADDRB[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized119 has unconnected port DINB[3]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized119 has unconnected port DINB[2]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized119 has unconnected port DINB[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized119 has unconnected port DINB[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized119 has unconnected port SLEEP
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized119 has unconnected port INJECTSBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized119 has unconnected port INJECTDBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized119 has unconnected port ECCPIPECE
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized119 has unconnected port ram_rstram_b
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized119 has unconnected port ram_rstreg_b
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr__parameterized5 has unconnected port RSTA[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr__parameterized5 has unconnected port WEA[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr__parameterized5 has unconnected port REGCEB[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr__parameterized5 has unconnected port WEB[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr__parameterized5 has unconnected port INJECTSBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr__parameterized5 has unconnected port INJECTDBITERR
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized2 has unconnected port CLKB
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized2 has unconnected port DOUTB_I[11]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized2 has unconnected port DOUTB_I[10]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized2 has unconnected port DOUTB_I[9]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized2 has unconnected port DOUTB_I[8]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized2 has unconnected port DOUTB_I[7]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized2 has unconnected port DOUTB_I[6]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized2 has unconnected port DOUTB_I[5]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized2 has unconnected port DOUTB_I[4]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized2 has unconnected port DOUTB_I[3]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized2 has unconnected port DOUTB_I[2]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized2 has unconnected port DOUTB_I[1]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized2 has unconnected port DOUTB_I[0]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized2 has unconnected port SBITERR_I
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized2 has unconnected port DBITERR_I
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized2 has unconnected port RDADDRECC_I[11]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized2 has unconnected port RDADDRECC_I[10]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized2 has unconnected port RDADDRECC_I[9]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized2 has unconnected port RDADDRECC_I[8]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized2 has unconnected port RDADDRECC_I[7]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized2 has unconnected port RDADDRECC_I[6]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized2 has unconnected port RDADDRECC_I[5]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized2 has unconnected port RDADDRECC_I[4]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized2 has unconnected port RDADDRECC_I[3]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized2 has unconnected port RDADDRECC_I[2]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized2 has unconnected port RDADDRECC_I[1]
+WARNING: [Synth 8-3331] design blk_mem_output_block__parameterized2 has unconnected port RDADDRECC_I[0]
+WARNING: [Synth 8-3331] design blk_mem_input_block__parameterized2 has unconnected port RSTA
+WARNING: [Synth 8-3331] design blk_mem_input_block__parameterized2 has unconnected port REGCEA
+WARNING: [Synth 8-3331] design blk_mem_input_block__parameterized2 has unconnected port WEA[0]
+WARNING: [Synth 8-3331] design blk_mem_input_block__parameterized2 has unconnected port DINA[11]
+WARNING: [Synth 8-3331] design blk_mem_input_block__parameterized2 has unconnected port DINA[10]
+WARNING: [Synth 8-3331] design blk_mem_input_block__parameterized2 has unconnected port DINA[9]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:13:10 ; elapsed = 00:13:15 . Memory (MB): peak = 1674.047 ; gain = 1369.258
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:13:11 ; elapsed = 00:13:16 . Memory (MB): peak = 1674.047 ; gain = 1369.258
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 137 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/alan/Desktop/Things/logic design/game/game.srcs/constrs_1/new/ucf.xdc]
+WARNING: [Vivado 12-507] No nets matched 'sw_i_IBUF[3]'. [C:/Users/alan/Desktop/Things/logic design/game/game.srcs/constrs_1/new/ucf.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/alan/Desktop/Things/logic design/game/game.srcs/constrs_1/new/ucf.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/alan/Desktop/Things/logic design/game/game.srcs/constrs_1/new/ucf.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/alan/Desktop/Things/logic design/game/game.srcs/constrs_1/new/ucf.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/alan/Desktop/Things/logic design/game/game.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/alan/Desktop/Things/logic design/game/game.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1674.047 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:13:33 ; elapsed = 00:13:39 . Memory (MB): peak = 1674.047 ; gain = 1369.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:13:33 ; elapsed = 00:13:39 . Memory (MB): peak = 1674.047 ; gain = 1369.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for basic. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for boll. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for hard. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mainwindow. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for normal. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for overgame. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for wingame. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:13:33 ; elapsed = 00:13:39 . Memory (MB): peak = 1674.047 ; gain = 1369.258
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element clkdiv_reg was removed.  [C:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/new/dispnumber.v:13]
+INFO: [Synth 8-5546] ROM "v_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'StC_reg' in module 'SPI_If'
+INFO: [Synth 8-5546] ROM "SCLK_2X_TICK" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "StN" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element SCLK_2X_DIV_reg was removed.  [C:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/new/SPI_If.vhd:159]
+INFO: [Synth 8-802] inferred FSM for state register 'StC_Spi_SendRec_reg' in module 'ADXL362Ctrl'
+INFO: [Synth 8-802] inferred FSM for state register 'StC_Spi_Trans_reg' in module 'ADXL362Ctrl'
+INFO: [Synth 8-802] inferred FSM for state register 'StC_Adxl_Ctrl_reg' in module 'ADXL362Ctrl'
+INFO: [Synth 8-5546] ROM "Cnt_SS_Inactive_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "Cnt_Num_Reads_Done" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "Sample_Rate_Tick" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "Cmd_Reg_Addr_Done" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "StN_Spi_SendRec" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "StN_Spi_SendRec" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "StN_Spi_SendRec" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "StN_Spi_Trans" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "StN_Adxl_Ctrl" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "StN_Adxl_Ctrl" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element ACCEL_X_SUM_reg was removed.  [C:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/new/ADXL362Ctrl.vhd:786]
+WARNING: [Synth 8-6014] Unused sequential element ACCEL_Y_SUM_reg was removed.  [C:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/new/ADXL362Ctrl.vhd:787]
+WARNING: [Synth 8-6014] Unused sequential element ACCEL_Z_SUM_reg was removed.  [C:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/new/ADXL362Ctrl.vhd:788]
+WARNING: [Synth 8-6014] Unused sequential element ACCEL_TMP_SUM_reg was removed.  [C:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/new/ADXL362Ctrl.vhd:789]
+INFO: [Synth 8-5546] ROM "Cnt_SS_Inactive_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "Cnt_Num_Reads_Done" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "Sample_Rate_Tick" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "Cmd_Reg_Addr_Done" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "StN_Spi_SendRec" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "StN_Spi_SendRec" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "StN_Spi_SendRec" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "StN_Spi_Trans" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "StN_Adxl_Ctrl" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "StN_Adxl_Ctrl" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Cmd_Reg_Data[0]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Cmd_Reg_Data[0]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Cmd_Reg[1]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Cmd_Reg[2]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Cnt_Bytes_Sent" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data1" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data1" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data1" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "over" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [C:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/new/top.v:127]
+WARNING: [Synth 8-6014] Unused sequential element clkdiv_reg was removed.  [C:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/new/top.v:345]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  stidle |                               00 |                         10100000
+               stprepare |                               01 |                         00001001
+                 stshift |                               10 |                         01011011
+                  stdone |                               11 |                         00001110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'StC_reg' using encoding 'sequential' in module 'SPI_If'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+        stspisendrecidle |                              000 |                          0000000
+         stspipreparecmd |                              001 |                          1000001
+         stspisendstartw |                              010 |                          0001011
+        stspiwaitondonew |                              011 |                          0000111
+         stspisendstartr |                              100 |                          0001110
+        stspiwaitondoner |                              101 |                          0100100
+        stspisendrecdone |                              110 |                          0010101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'StC_Spi_SendRec_reg' using encoding 'sequential' in module 'ADXL362Ctrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+          stspitransidle |                              000 |                       0000000000
+     stspiprepandsendcmd |                              001 |                       1111100001
+       stspiwaitondonesr |                              010 |                       0000110011
+     stspiwaitforssinact |                              011 |                       0000000010
+          stspitransdone |                              100 |                       0000001110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'StC_Spi_Trans_reg' using encoding 'sequential' in module 'ADXL362Ctrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+          stadxlctrlidle |                             0000 |                     100100000000
+      stadxlsendresetcmd |                             0001 |                     011001000001
+     stadxlwaitresetdone |                             0010 |                     010000000011
+    stadxlconf_remaining |                             0011 |                     011001000010
+stadxlwaitsampleratetick |                             0100 |                     000100000110
+       stadxlread_status |                             0101 |                     011001000111
+         stadxlread_data |                             0110 |                     011000000101
+      stadxlformatandsum |                             0111 |                     000010101101
+         stadxlread_done |                             1000 |                     000001011111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'StC_Adxl_Ctrl_reg' using encoding 'sequential' in module 'ADXL362Ctrl'
+WARNING: [Synth 8-327] inferring latch for variable 'choice_reg' [C:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/new/top.v:106]
+WARNING: [Synth 8-327] inferring latch for variable 'location_reg2_reg' [C:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/new/top.v:122]
+WARNING: [Synth 8-327] inferring latch for variable 'location_reg3_reg' [C:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/new/top.v:122]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:13:42 ; elapsed = 00:13:49 . Memory (MB): peak = 1674.047 ; gain = 1369.258
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     19 Bit       Adders := 10    
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input     14 Bit       Adders := 2     
+	   3 Input     12 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 3     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 7     
+	   2 Input      9 Bit       Adders := 3     
+	   3 Input      9 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   4 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 3     
+	   2 Input      2 Bit       Adders := 3     
++---Registers : 
+	               19 Bit    Registers := 2     
+	               17 Bit    Registers := 1     
+	               14 Bit    Registers := 2     
+	               12 Bit    Registers := 4     
+	               10 Bit    Registers := 4     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 18    
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 8     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input     19 Bit        Muxes := 8     
+	   2 Input     17 Bit        Muxes := 1     
+	   9 Input     12 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 16    
+	   3 Input     12 Bit        Muxes := 1     
+	   5 Input     10 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 8     
+	   2 Input      9 Bit        Muxes := 8     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	   5 Input      8 Bit        Muxes := 2     
+	   7 Input      7 Bit        Muxes := 1     
+	   8 Input      7 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 9     
+	  12 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 5     
+	  12 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 3     
+	   3 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 599   
+	   4 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     19 Bit       Adders := 10    
+	   2 Input     14 Bit       Adders := 2     
+	   3 Input     12 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 3     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 3     
+	   2 Input      9 Bit       Adders := 2     
+	   3 Input      9 Bit       Adders := 1     
+	   4 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     19 Bit        Muxes := 8     
+	   2 Input     12 Bit        Muxes := 16    
+	   3 Input     12 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 8     
+	   2 Input      9 Bit        Muxes := 8     
+	   2 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 26    
+Module bcd 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 4     
+Module vgac 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 3     
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 3     
+	                9 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module bindec 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 256   
+Module blk_mem_gen_mux 
+Detailed RTL Component Info : 
++---Registers : 
+	               19 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module blk_mem_gen_mux__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               19 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module bindec__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 8     
+Module blk_mem_gen_mux__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	               14 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module blk_mem_gen_mux__parameterized2 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
+Module SPI_If 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 3     
+	                6 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 1     
+Module ADXL362Ctrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 2     
++---Registers : 
+	               17 Bit    Registers := 1     
+	               12 Bit    Registers := 4     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 11    
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 1     
+	   9 Input     12 Bit        Muxes := 1     
+	   5 Input     10 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   7 Input      7 Bit        Muxes := 1     
+	   8 Input      7 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	  12 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	  12 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 21    
+	   7 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element clkdiv_reg was removed.  [C:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/new/dispnumber.v:13]
+INFO: [Synth 8-5546] ROM "v_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'Cmd_Reg_Data_Addr_reg[1:0]' into 'Cmd_Reg_Data_Addr_reg[1:0]' [C:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/new/ADXL362Ctrl.vhd:451]
+WARNING: [Synth 8-6014] Unused sequential element Cmd_Reg_Data_Addr_reg was removed.  [C:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/new/ADXL362Ctrl.vhd:451]
+INFO: [Synth 8-5546] ROM "SPI_Interface/SCLK_2X_TICK" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Sample_Rate_Tick" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Cnt_SS_Inactive_done" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element SPI_Interface/SCLK_2X_DIV_reg was removed.  [C:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/new/SPI_If.vhd:159]
+WARNING: [Synth 8-6014] Unused sequential element ACCEL_X_SUM_reg was removed.  [C:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/new/ADXL362Ctrl.vhd:786]
+WARNING: [Synth 8-6014] Unused sequential element ACCEL_Y_SUM_reg was removed.  [C:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/new/ADXL362Ctrl.vhd:787]
+WARNING: [Synth 8-6014] Unused sequential element ACCEL_Z_SUM_reg was removed.  [C:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/new/ADXL362Ctrl.vhd:788]
+WARNING: [Synth 8-6014] Unused sequential element ACCEL_TMP_SUM_reg was removed.  [C:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/new/ADXL362Ctrl.vhd:789]
+INFO: [Synth 8-5544] ROM "data1" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data1" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element clkdiv_reg was removed.  [C:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/new/top.v:345]
+WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [C:/Users/alan/Desktop/Things/logic design/game/game.srcs/sources_1/new/top.v:127]
+DSP Report: Generating DSP hard_location1, operation Mode is: A*(B:0x3c).
+DSP Report: operator hard_location1 is absorbed into DSP hard_location1.
+DSP Report: Generating DSP hard_location, operation Mode is: PCIN+(A:0x0):B+(C:0xfffffffffdbc).
+DSP Report: operator hard_location is absorbed into DSP hard_location.
+DSP Report: Generating DSP addra1, operation Mode is: C+(A:0x280)*B.
+DSP Report: operator addra1 is absorbed into DSP addra1.
+DSP Report: operator addra2 is absorbed into DSP addra1.
+DSP Report: Generating DSP normal_location1, operation Mode is: A*(B:0x3c).
+DSP Report: operator normal_location1 is absorbed into DSP normal_location1.
+DSP Report: Generating DSP normal_location, operation Mode is: PCIN+(A:0x0):B+(C:0xfffffffffdbc).
+DSP Report: operator normal_location is absorbed into DSP normal_location.
+DSP Report: Generating DSP easy_location1, operation Mode is: A*(B:0x3c).
+DSP Report: operator easy_location1 is absorbed into DSP easy_location1.
+DSP Report: Generating DSP easy_location, operation Mode is: PCIN+(A:0x0):B+(C:0xfffffffffdbc).
+DSP Report: operator easy_location is absorbed into DSP easy_location.
+DSP Report: Generating DSP win_location1, operation Mode is: A*(B:0x64).
+DSP Report: operator win_location1 is absorbed into DSP win_location1.
+DSP Report: Generating DSP win_location, operation Mode is: PCIN+(A:0x0):B+(C:0xfffffffffef2).
+DSP Report: operator win_location is absorbed into DSP win_location.
+DSP Report: Generating DSP over_location1, operation Mode is: A*(B:0x96).
+DSP Report: operator over_location1 is absorbed into DSP over_location1.
+DSP Report: Generating DSP over_location, operation Mode is: PCIN+(A:0x0):B+(C:0xffffffffff0b).
+DSP Report: operator over_location is absorbed into DSP over_location.
+DSP Report: Generating DSP location_reg21, operation Mode is: C+A*(B:0x280).
+DSP Report: operator location_reg21 is absorbed into DSP location_reg21.
+DSP Report: operator location_reg22 is absorbed into DSP location_reg21.
+DSP Report: Generating DSP location_reg21, operation Mode is: C+A*(B:0x280).
+DSP Report: operator location_reg21 is absorbed into DSP location_reg21.
+DSP Report: operator location_reg22 is absorbed into DSP location_reg21.
+DSP Report: Generating DSP location_reg21, operation Mode is: C+(D+(A:0xc))*(B:0x280).
+DSP Report: operator location_reg21 is absorbed into DSP location_reg21.
+DSP Report: operator location_reg22 is absorbed into DSP location_reg21.
+DSP Report: operator location_reg23 is absorbed into DSP location_reg21.
+DSP Report: Generating DSP location_reg20, operation Mode is: C+(A:0x280)*B.
+DSP Report: operator location_reg20 is absorbed into DSP location_reg20.
+DSP Report: operator location_reg21 is absorbed into DSP location_reg20.
+DSP Report: Generating DSP location_reg31, operation Mode is: C+A*(B:0x280).
+DSP Report: operator location_reg31 is absorbed into DSP location_reg31.
+DSP Report: operator location_reg32 is absorbed into DSP location_reg31.
+INFO: [Synth 8-3886] merging instance 'acceleration/Cmd_Reg_reg[0][0]' (FDRE) to 'acceleration/Cmd_Reg_reg[0][5]'
+INFO: [Synth 8-3886] merging instance 'acceleration/Cmd_Reg_reg[0][3]' (FDRE) to 'acceleration/Cmd_Reg_reg[0][5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\acceleration/Cmd_Reg_reg[0][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\acceleration/Cmd_Reg_reg[1][7] )
+WARNING: [Synth 8-3332] Sequential element (disp/clkdiv_reg[21]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (disp/clkdiv_reg[22]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (disp/clkdiv_reg[23]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (disp/clkdiv_reg[24]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (disp/clkdiv_reg[25]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (disp/clkdiv_reg[26]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (disp/clkdiv_reg[27]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (disp/clkdiv_reg[28]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (disp/clkdiv_reg[29]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (disp/clkdiv_reg[30]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (disp/clkdiv_reg[31]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (acceleration/Cmd_Reg_reg[0][5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (acceleration/Cmd_Reg_reg[1][7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (acceleration/Cmd_Reg_reg[2][7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (acceleration/D_Send_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (acceleration/ACCEL_Z_SUM_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (acceleration/ACCEL_Z_SUM_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (acceleration/ACCEL_Z_SUM_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (acceleration/ACCEL_Z_SUM_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (acceleration/ACCEL_Z_SUM_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (acceleration/ACCEL_Z_SUM_reg[5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (acceleration/ACCEL_Z_SUM_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (acceleration/ACCEL_Z_SUM_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (acceleration/ACCEL_Z_SUM_reg[8]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (acceleration/ACCEL_Z_SUM_reg[9]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (acceleration/ACCEL_Z_SUM_reg[10]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (acceleration/ACCEL_Z_SUM_reg[11]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (acceleration/ACCEL_Z_SUM_reg[12]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (acceleration/ACCEL_Z_SUM_reg[13]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (acceleration/ACCEL_Z_SUM_reg[14]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (acceleration/ACCEL_Z_SUM_reg[15]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (acceleration/ACCEL_Z_reg[11]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (acceleration/ACCEL_Z_reg[10]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (acceleration/ACCEL_Z_reg[9]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (acceleration/ACCEL_Z_reg[8]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (acceleration/ACCEL_Z_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (acceleration/ACCEL_Z_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (acceleration/ACCEL_Z_reg[5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (acceleration/ACCEL_Z_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (acceleration/ACCEL_Z_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (acceleration/ACCEL_Z_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (acceleration/ACCEL_Z_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (acceleration/ACCEL_Z_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (acceleration/ACCEL_TMP_SUM_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (acceleration/ACCEL_TMP_SUM_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (acceleration/ACCEL_TMP_SUM_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (acceleration/ACCEL_TMP_SUM_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (acceleration/ACCEL_TMP_SUM_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (acceleration/ACCEL_TMP_SUM_reg[5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (acceleration/ACCEL_TMP_SUM_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (acceleration/ACCEL_TMP_SUM_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (acceleration/ACCEL_TMP_SUM_reg[8]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (acceleration/ACCEL_TMP_SUM_reg[9]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (acceleration/ACCEL_TMP_SUM_reg[10]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (acceleration/ACCEL_TMP_SUM_reg[11]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (acceleration/ACCEL_TMP_SUM_reg[12]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (acceleration/ACCEL_TMP_SUM_reg[13]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (acceleration/ACCEL_TMP_SUM_reg[14]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (acceleration/ACCEL_TMP_SUM_reg[15]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (acceleration/ACCEL_TMP_reg[11]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (acceleration/ACCEL_TMP_reg[10]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (acceleration/ACCEL_TMP_reg[9]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (acceleration/ACCEL_TMP_reg[8]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (acceleration/ACCEL_TMP_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (acceleration/ACCEL_TMP_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (acceleration/ACCEL_TMP_reg[5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (acceleration/ACCEL_TMP_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (acceleration/ACCEL_TMP_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (acceleration/ACCEL_TMP_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (acceleration/ACCEL_TMP_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (acceleration/ACCEL_TMP_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (acceleration/Data_Ready_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (clkdiv_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (clkdiv_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (clkdiv_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (clkdiv_reg[5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (clkdiv_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (clkdiv_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (clkdiv_reg[8]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (clkdiv_reg[9]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (clkdiv_reg[10]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (clkdiv_reg[11]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (clkdiv_reg[12]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (clkdiv_reg[13]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (clkdiv_reg[14]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (clkdiv_reg[15]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (clkdiv_reg[16]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (clkdiv_reg[17]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (clkdiv_reg[18]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (clkdiv_reg[19]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (clkdiv_reg[20]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (clkdiv_reg[21]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (clkdiv_reg[22]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (clkdiv_reg[23]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (clkdiv_reg[24]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (clkdiv_reg[25]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (clkdiv_reg[26]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (clkdiv_reg[27]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (clkdiv_reg[28]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (clkdiv_reg[29]) is unused and will be removed from module top.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:14:03 ; elapsed = 00:14:11 . Memory (MB): peak = 1674.047 ; gain = 1369.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+-----------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping                       | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-----------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|top         | A*(B:0x3c)                        | 12     | 6      | -      | -      | 18     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|top         | PCIN+(A:0x0):B+(C:0xfffffffffdbc) | 30     | 10     | 11     | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|top         | C+(A:0x280)*B                     | 9      | 10     | 10     | -      | 19     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|top         | A*(B:0x3c)                        | 12     | 6      | -      | -      | 18     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|top         | PCIN+(A:0x0):B+(C:0xfffffffffdbc) | 30     | 10     | 11     | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|top         | A*(B:0x3c)                        | 12     | 6      | -      | -      | 18     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|top         | PCIN+(A:0x0):B+(C:0xfffffffffdbc) | 30     | 10     | 11     | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|top         | A*(B:0x64)                        | 14     | 7      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|top         | PCIN+(A:0x0):B+(C:0xfffffffffef2) | 30     | 10     | 10     | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|top         | A*(B:0x96)                        | 14     | 8      | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|top         | PCIN+(A:0x0):B+(C:0xffffffffff0b) | 30     | 10     | 9      | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|top         | C+A*(B:0x280)                     | 19     | 10     | 10     | -      | 19     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|top         | C+A*(B:0x280)                     | 10     | 10     | 10     | -      | 19     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|top         | C+(D+(A:0xc))*(B:0x280)           | 4      | 10     | 10     | 9      | 19     | 0    | 0    | 0    | 0    | 0     | 0    | 0    | 
+|top         | C+(A:0x280)*B                     | 9      | 10     | 10     | -      | 19     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|top         | C+A*(B:0x280)                     | 19     | 10     | 10     | -      | 19     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++------------+-----------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:14:18 ; elapsed = 00:14:26 . Memory (MB): peak = 1674.047 ; gain = 1369.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:14:19 ; elapsed = 00:14:27 . Memory (MB): peak = 1674.047 ; gain = 1369.258
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:14:21 ; elapsed = 00:14:30 . Memory (MB): peak = 1674.047 ; gain = 1369.258
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:14:22 ; elapsed = 00:14:31 . Memory (MB): peak = 1674.047 ; gain = 1369.258
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:14:22 ; elapsed = 00:14:31 . Memory (MB): peak = 1674.047 ; gain = 1369.258
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:14:23 ; elapsed = 00:14:32 . Memory (MB): peak = 1674.047 ; gain = 1369.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:14:23 ; elapsed = 00:14:32 . Memory (MB): peak = 1674.047 ; gain = 1369.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:14:23 ; elapsed = 00:14:32 . Memory (MB): peak = 1674.047 ; gain = 1369.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:14:23 ; elapsed = 00:14:32 . Memory (MB): peak = 1674.047 ; gain = 1369.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+---------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                        | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+---------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|top         | acceleration/Data_Reg_reg[4][7] | 4      | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|top         | acceleration/Data_Reg_reg[4][6] | 5      | 6     | NO           | NO                 | YES               | 6      | 0       | 
++------------+---------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------------+------+
+|      |Cell         |Count |
++------+-------------+------+
+|1     |BUFG         |     5|
+|2     |CARRY4       |   116|
+|3     |DSP48E1      |     5|
+|4     |DSP48E1_2    |     4|
+|5     |DSP48E1_3    |     1|
+|6     |DSP48E1_4    |     5|
+|7     |DSP48E1_5    |     1|
+|8     |LUT1         |   100|
+|9     |LUT2         |   173|
+|10    |LUT3         |   142|
+|11    |LUT4         |   164|
+|12    |LUT5         |   385|
+|13    |LUT6         |   729|
+|14    |MUXF7        |   226|
+|15    |MUXF8        |    90|
+|16    |RAMB18E1     |     2|
+|17    |RAMB18E1_1   |     1|
+|18    |RAMB18E1_10  |     1|
+|19    |RAMB18E1_2   |     1|
+|20    |RAMB18E1_3   |     1|
+|21    |RAMB18E1_4   |     1|
+|22    |RAMB18E1_5   |     1|
+|23    |RAMB18E1_6   |     1|
+|24    |RAMB18E1_7   |     1|
+|25    |RAMB18E1_8   |     1|
+|26    |RAMB18E1_9   |     1|
+|27    |RAMB36E1     |     1|
+|28    |RAMB36E1_1   |     1|
+|29    |RAMB36E1_10  |     1|
+|30    |RAMB36E1_100 |     1|
+|31    |RAMB36E1_101 |     1|
+|32    |RAMB36E1_102 |     1|
+|33    |RAMB36E1_103 |     1|
+|34    |RAMB36E1_104 |     1|
+|35    |RAMB36E1_105 |     1|
+|36    |RAMB36E1_106 |     1|
+|37    |RAMB36E1_107 |     1|
+|38    |RAMB36E1_108 |     1|
+|39    |RAMB36E1_109 |     1|
+|40    |RAMB36E1_11  |     1|
+|41    |RAMB36E1_110 |     1|
+|42    |RAMB36E1_111 |     1|
+|43    |RAMB36E1_112 |     1|
+|44    |RAMB36E1_113 |     1|
+|45    |RAMB36E1_114 |     1|
+|46    |RAMB36E1_115 |     1|
+|47    |RAMB36E1_12  |     1|
+|48    |RAMB36E1_13  |     1|
+|49    |RAMB36E1_14  |     1|
+|50    |RAMB36E1_15  |     1|
+|51    |RAMB36E1_16  |     1|
+|52    |RAMB36E1_17  |     1|
+|53    |RAMB36E1_18  |     1|
+|54    |RAMB36E1_19  |     1|
+|55    |RAMB36E1_2   |     1|
+|56    |RAMB36E1_20  |     1|
+|57    |RAMB36E1_21  |     1|
+|58    |RAMB36E1_22  |     1|
+|59    |RAMB36E1_23  |     1|
+|60    |RAMB36E1_24  |     1|
+|61    |RAMB36E1_25  |     1|
+|62    |RAMB36E1_26  |     1|
+|63    |RAMB36E1_27  |     1|
+|64    |RAMB36E1_28  |     1|
+|65    |RAMB36E1_29  |     1|
+|66    |RAMB36E1_3   |     1|
+|67    |RAMB36E1_30  |     1|
+|68    |RAMB36E1_31  |     1|
+|69    |RAMB36E1_32  |     1|
+|70    |RAMB36E1_33  |     1|
+|71    |RAMB36E1_34  |     1|
+|72    |RAMB36E1_35  |     1|
+|73    |RAMB36E1_36  |     1|
+|74    |RAMB36E1_37  |     1|
+|75    |RAMB36E1_38  |     1|
+|76    |RAMB36E1_39  |     1|
+|77    |RAMB36E1_4   |     1|
+|78    |RAMB36E1_40  |     1|
+|79    |RAMB36E1_41  |     1|
+|80    |RAMB36E1_42  |     1|
+|81    |RAMB36E1_43  |     1|
+|82    |RAMB36E1_44  |     1|
+|83    |RAMB36E1_45  |     1|
+|84    |RAMB36E1_46  |     1|
+|85    |RAMB36E1_47  |     1|
+|86    |RAMB36E1_48  |     1|
+|87    |RAMB36E1_49  |     1|
+|88    |RAMB36E1_5   |     1|
+|89    |RAMB36E1_50  |     1|
+|90    |RAMB36E1_51  |     1|
+|91    |RAMB36E1_52  |     1|
+|92    |RAMB36E1_53  |     1|
+|93    |RAMB36E1_54  |     1|
+|94    |RAMB36E1_55  |     1|
+|95    |RAMB36E1_56  |     1|
+|96    |RAMB36E1_57  |     1|
+|97    |RAMB36E1_58  |     1|
+|98    |RAMB36E1_59  |     1|
+|99    |RAMB36E1_6   |     1|
+|100   |RAMB36E1_60  |     1|
+|101   |RAMB36E1_61  |     1|
+|102   |RAMB36E1_62  |     1|
+|103   |RAMB36E1_63  |     1|
+|104   |RAMB36E1_64  |     1|
+|105   |RAMB36E1_65  |     1|
+|106   |RAMB36E1_66  |     1|
+|107   |RAMB36E1_67  |     1|
+|108   |RAMB36E1_68  |     1|
+|109   |RAMB36E1_69  |     1|
+|110   |RAMB36E1_7   |     1|
+|111   |RAMB36E1_70  |     1|
+|112   |RAMB36E1_71  |     1|
+|113   |RAMB36E1_72  |     1|
+|114   |RAMB36E1_73  |     1|
+|115   |RAMB36E1_74  |     1|
+|116   |RAMB36E1_75  |     1|
+|117   |RAMB36E1_76  |     1|
+|118   |RAMB36E1_77  |     1|
+|119   |RAMB36E1_78  |     1|
+|120   |RAMB36E1_79  |     1|
+|121   |RAMB36E1_8   |     1|
+|122   |RAMB36E1_80  |     1|
+|123   |RAMB36E1_81  |     1|
+|124   |RAMB36E1_82  |     1|
+|125   |RAMB36E1_83  |     1|
+|126   |RAMB36E1_84  |     1|
+|127   |RAMB36E1_85  |     1|
+|128   |RAMB36E1_86  |     1|
+|129   |RAMB36E1_87  |     1|
+|130   |RAMB36E1_88  |     1|
+|131   |RAMB36E1_89  |     1|
+|132   |RAMB36E1_9   |     1|
+|133   |RAMB36E1_90  |     1|
+|134   |RAMB36E1_91  |     1|
+|135   |RAMB36E1_92  |     1|
+|136   |RAMB36E1_93  |     1|
+|137   |RAMB36E1_94  |     1|
+|138   |RAMB36E1_95  |    10|
+|139   |RAMB36E1_96  |     1|
+|140   |RAMB36E1_97  |     1|
+|141   |RAMB36E1_98  |     1|
+|142   |RAMB36E1_99  |     1|
+|143   |SRL16E       |     8|
+|144   |FDCE         |    33|
+|145   |FDRE         |   346|
+|146   |FDSE         |     5|
+|147   |LD           |    38|
+|148   |LDCP         |     2|
+|149   |IBUF         |     8|
+|150   |OBUF         |    48|
++------+-------------+------+
+
+Report Instance Areas: 
++------+-----------------------------------------------+------------------------------------------------+------+
+|      |Instance                                       |Module                                          |Cells |
++------+-----------------------------------------------+------------------------------------------------+------+
+|1     |top                                            |                                                |  2771|
+|2     |  mainwindow                                   |blk_mem_gen_0                                   |  1106|
+|3     |    U0                                         |blk_mem_gen_v8_4_1                              |  1106|
+|4     |      inst_blk_mem_gen                         |blk_mem_gen_v8_4_1_synth                        |  1106|
+|5     |        \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top                                 |  1106|
+|6     |          \valid.cstr                          |blk_mem_gen_generic_cstr                        |  1106|
+|7     |            \has_mux_a.A                       |blk_mem_gen_mux                                 |   397|
+|8     |            \has_mux_b.B                       |blk_mem_gen_mux__parameterized0                 |   399|
+|9     |            \ramloop[0].ram.r                  |blk_mem_gen_prim_width                          |     2|
+|10    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init                   |     2|
+|11    |            \ramloop[100].ram.r                |blk_mem_gen_prim_width__parameterized99         |     2|
+|12    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized99  |     2|
+|13    |            \ramloop[101].ram.r                |blk_mem_gen_prim_width__parameterized100        |     2|
+|14    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized100 |     2|
+|15    |            \ramloop[102].ram.r                |blk_mem_gen_prim_width__parameterized101        |     2|
+|16    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized101 |     2|
+|17    |            \ramloop[103].ram.r                |blk_mem_gen_prim_width__parameterized102        |     2|
+|18    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized102 |     2|
+|19    |            \ramloop[104].ram.r                |blk_mem_gen_prim_width__parameterized103        |     3|
+|20    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized103 |     3|
+|21    |            \ramloop[10].ram.r                 |blk_mem_gen_prim_width__parameterized9          |     4|
+|22    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized9   |     4|
+|23    |            \ramloop[11].ram.r                 |blk_mem_gen_prim_width__parameterized10         |     4|
+|24    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized10  |     4|
+|25    |            \ramloop[12].ram.r                 |blk_mem_gen_prim_width__parameterized11         |     1|
+|26    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized11  |     1|
+|27    |            \ramloop[13].ram.r                 |blk_mem_gen_prim_width__parameterized12         |     3|
+|28    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized12  |     3|
+|29    |            \ramloop[14].ram.r                 |blk_mem_gen_prim_width__parameterized13         |     3|
+|30    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized13  |     3|
+|31    |            \ramloop[15].ram.r                 |blk_mem_gen_prim_width__parameterized14         |     3|
+|32    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized14  |     3|
+|33    |            \ramloop[16].ram.r                 |blk_mem_gen_prim_width__parameterized15         |     3|
+|34    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized15  |     3|
+|35    |            \ramloop[17].ram.r                 |blk_mem_gen_prim_width__parameterized16         |     3|
+|36    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized16  |     3|
+|37    |            \ramloop[18].ram.r                 |blk_mem_gen_prim_width__parameterized17         |     3|
+|38    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized17  |     3|
+|39    |            \ramloop[19].ram.r                 |blk_mem_gen_prim_width__parameterized18         |     3|
+|40    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized18  |     3|
+|41    |            \ramloop[1].ram.r                  |blk_mem_gen_prim_width__parameterized0          |     2|
+|42    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized0   |     2|
+|43    |            \ramloop[20].ram.r                 |blk_mem_gen_prim_width__parameterized19         |     3|
+|44    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized19  |     3|
+|45    |            \ramloop[21].ram.r                 |blk_mem_gen_prim_width__parameterized20         |     3|
+|46    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized20  |     3|
+|47    |            \ramloop[22].ram.r                 |blk_mem_gen_prim_width__parameterized21         |     3|
+|48    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized21  |     3|
+|49    |            \ramloop[23].ram.r                 |blk_mem_gen_prim_width__parameterized22         |     3|
+|50    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized22  |     3|
+|51    |            \ramloop[24].ram.r                 |blk_mem_gen_prim_width__parameterized23         |     3|
+|52    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized23  |     3|
+|53    |            \ramloop[25].ram.r                 |blk_mem_gen_prim_width__parameterized24         |     3|
+|54    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized24  |     3|
+|55    |            \ramloop[26].ram.r                 |blk_mem_gen_prim_width__parameterized25         |     3|
+|56    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized25  |     3|
+|57    |            \ramloop[27].ram.r                 |blk_mem_gen_prim_width__parameterized26         |     3|
+|58    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized26  |     3|
+|59    |            \ramloop[28].ram.r                 |blk_mem_gen_prim_width__parameterized27         |     3|
+|60    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized27  |     3|
+|61    |            \ramloop[29].ram.r                 |blk_mem_gen_prim_width__parameterized28         |     3|
+|62    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized28  |     3|
+|63    |            \ramloop[2].ram.r                  |blk_mem_gen_prim_width__parameterized1          |     2|
+|64    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized1   |     2|
+|65    |            \ramloop[30].ram.r                 |blk_mem_gen_prim_width__parameterized29         |     3|
+|66    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized29  |     3|
+|67    |            \ramloop[31].ram.r                 |blk_mem_gen_prim_width__parameterized30         |     3|
+|68    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized30  |     3|
+|69    |            \ramloop[32].ram.r                 |blk_mem_gen_prim_width__parameterized31         |     3|
+|70    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized31  |     3|
+|71    |            \ramloop[33].ram.r                 |blk_mem_gen_prim_width__parameterized32         |     3|
+|72    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized32  |     3|
+|73    |            \ramloop[34].ram.r                 |blk_mem_gen_prim_width__parameterized33         |     3|
+|74    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized33  |     3|
+|75    |            \ramloop[35].ram.r                 |blk_mem_gen_prim_width__parameterized34         |     3|
+|76    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized34  |     3|
+|77    |            \ramloop[36].ram.r                 |blk_mem_gen_prim_width__parameterized35         |     3|
+|78    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized35  |     3|
+|79    |            \ramloop[37].ram.r                 |blk_mem_gen_prim_width__parameterized36         |     3|
+|80    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized36  |     3|
+|81    |            \ramloop[38].ram.r                 |blk_mem_gen_prim_width__parameterized37         |     3|
+|82    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized37  |     3|
+|83    |            \ramloop[39].ram.r                 |blk_mem_gen_prim_width__parameterized38         |     3|
+|84    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized38  |     3|
+|85    |            \ramloop[3].ram.r                  |blk_mem_gen_prim_width__parameterized2          |     2|
+|86    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized2   |     2|
+|87    |            \ramloop[40].ram.r                 |blk_mem_gen_prim_width__parameterized39         |     3|
+|88    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized39  |     3|
+|89    |            \ramloop[41].ram.r                 |blk_mem_gen_prim_width__parameterized40         |     3|
+|90    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized40  |     3|
+|91    |            \ramloop[42].ram.r                 |blk_mem_gen_prim_width__parameterized41         |     3|
+|92    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized41  |     3|
+|93    |            \ramloop[43].ram.r                 |blk_mem_gen_prim_width__parameterized42         |     3|
+|94    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized42  |     3|
+|95    |            \ramloop[44].ram.r                 |blk_mem_gen_prim_width__parameterized43         |     3|
+|96    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized43  |     3|
+|97    |            \ramloop[45].ram.r                 |blk_mem_gen_prim_width__parameterized44         |     3|
+|98    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized44  |     3|
+|99    |            \ramloop[46].ram.r                 |blk_mem_gen_prim_width__parameterized45         |     3|
+|100   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized45  |     3|
+|101   |            \ramloop[47].ram.r                 |blk_mem_gen_prim_width__parameterized46         |     3|
+|102   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized46  |     3|
+|103   |            \ramloop[48].ram.r                 |blk_mem_gen_prim_width__parameterized47         |     3|
+|104   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized47  |     3|
+|105   |            \ramloop[49].ram.r                 |blk_mem_gen_prim_width__parameterized48         |     3|
+|106   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized48  |     3|
+|107   |            \ramloop[4].ram.r                  |blk_mem_gen_prim_width__parameterized3          |     2|
+|108   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized3   |     2|
+|109   |            \ramloop[50].ram.r                 |blk_mem_gen_prim_width__parameterized49         |     3|
+|110   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized49  |     3|
+|111   |            \ramloop[51].ram.r                 |blk_mem_gen_prim_width__parameterized50         |     3|
+|112   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized50  |     3|
+|113   |            \ramloop[52].ram.r                 |blk_mem_gen_prim_width__parameterized51         |     3|
+|114   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized51  |     3|
+|115   |            \ramloop[53].ram.r                 |blk_mem_gen_prim_width__parameterized52         |     3|
+|116   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized52  |     3|
+|117   |            \ramloop[54].ram.r                 |blk_mem_gen_prim_width__parameterized53         |     3|
+|118   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized53  |     3|
+|119   |            \ramloop[55].ram.r                 |blk_mem_gen_prim_width__parameterized54         |     3|
+|120   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized54  |     3|
+|121   |            \ramloop[56].ram.r                 |blk_mem_gen_prim_width__parameterized55         |     3|
+|122   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized55  |     3|
+|123   |            \ramloop[57].ram.r                 |blk_mem_gen_prim_width__parameterized56         |     3|
+|124   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized56  |     3|
+|125   |            \ramloop[58].ram.r                 |blk_mem_gen_prim_width__parameterized57         |     3|
+|126   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized57  |     3|
+|127   |            \ramloop[59].ram.r                 |blk_mem_gen_prim_width__parameterized58         |     3|
+|128   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized58  |     3|
+|129   |            \ramloop[5].ram.r                  |blk_mem_gen_prim_width__parameterized4          |     3|
+|130   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized4   |     3|
+|131   |            \ramloop[60].ram.r                 |blk_mem_gen_prim_width__parameterized59         |     3|
+|132   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized59  |     3|
+|133   |            \ramloop[61].ram.r                 |blk_mem_gen_prim_width__parameterized60         |     3|
+|134   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized60  |     3|
+|135   |            \ramloop[62].ram.r                 |blk_mem_gen_prim_width__parameterized61         |     3|
+|136   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized61  |     3|
+|137   |            \ramloop[63].ram.r                 |blk_mem_gen_prim_width__parameterized62         |     3|
+|138   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized62  |     3|
+|139   |            \ramloop[64].ram.r                 |blk_mem_gen_prim_width__parameterized63         |     3|
+|140   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized63  |     3|
+|141   |            \ramloop[65].ram.r                 |blk_mem_gen_prim_width__parameterized64         |     3|
+|142   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized64  |     3|
+|143   |            \ramloop[66].ram.r                 |blk_mem_gen_prim_width__parameterized65         |     3|
+|144   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized65  |     3|
+|145   |            \ramloop[67].ram.r                 |blk_mem_gen_prim_width__parameterized66         |     3|
+|146   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized66  |     3|
+|147   |            \ramloop[68].ram.r                 |blk_mem_gen_prim_width__parameterized67         |     3|
+|148   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized67  |     3|
+|149   |            \ramloop[69].ram.r                 |blk_mem_gen_prim_width__parameterized68         |     3|
+|150   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized68  |     3|
+|151   |            \ramloop[6].ram.r                  |blk_mem_gen_prim_width__parameterized5          |     3|
+|152   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized5   |     3|
+|153   |            \ramloop[70].ram.r                 |blk_mem_gen_prim_width__parameterized69         |     3|
+|154   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized69  |     3|
+|155   |            \ramloop[71].ram.r                 |blk_mem_gen_prim_width__parameterized70         |     3|
+|156   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized70  |     3|
+|157   |            \ramloop[72].ram.r                 |blk_mem_gen_prim_width__parameterized71         |     3|
+|158   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized71  |     3|
+|159   |            \ramloop[73].ram.r                 |blk_mem_gen_prim_width__parameterized72         |     3|
+|160   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized72  |     3|
+|161   |            \ramloop[74].ram.r                 |blk_mem_gen_prim_width__parameterized73         |     3|
+|162   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized73  |     3|
+|163   |            \ramloop[75].ram.r                 |blk_mem_gen_prim_width__parameterized74         |     3|
+|164   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized74  |     3|
+|165   |            \ramloop[76].ram.r                 |blk_mem_gen_prim_width__parameterized75         |     3|
+|166   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized75  |     3|
+|167   |            \ramloop[77].ram.r                 |blk_mem_gen_prim_width__parameterized76         |     3|
+|168   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized76  |     3|
+|169   |            \ramloop[78].ram.r                 |blk_mem_gen_prim_width__parameterized77         |     3|
+|170   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized77  |     3|
+|171   |            \ramloop[79].ram.r                 |blk_mem_gen_prim_width__parameterized78         |     3|
+|172   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized78  |     3|
+|173   |            \ramloop[7].ram.r                  |blk_mem_gen_prim_width__parameterized6          |     4|
+|174   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized6   |     4|
+|175   |            \ramloop[80].ram.r                 |blk_mem_gen_prim_width__parameterized79         |     3|
+|176   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized79  |     3|
+|177   |            \ramloop[81].ram.r                 |blk_mem_gen_prim_width__parameterized80         |     3|
+|178   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized80  |     3|
+|179   |            \ramloop[82].ram.r                 |blk_mem_gen_prim_width__parameterized81         |     3|
+|180   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized81  |     3|
+|181   |            \ramloop[83].ram.r                 |blk_mem_gen_prim_width__parameterized82         |     3|
+|182   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized82  |     3|
+|183   |            \ramloop[84].ram.r                 |blk_mem_gen_prim_width__parameterized83         |     3|
+|184   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized83  |     3|
+|185   |            \ramloop[85].ram.r                 |blk_mem_gen_prim_width__parameterized84         |     3|
+|186   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized84  |     3|
+|187   |            \ramloop[86].ram.r                 |blk_mem_gen_prim_width__parameterized85         |     3|
+|188   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized85  |     3|
+|189   |            \ramloop[87].ram.r                 |blk_mem_gen_prim_width__parameterized86         |     3|
+|190   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized86  |     3|
+|191   |            \ramloop[88].ram.r                 |blk_mem_gen_prim_width__parameterized87         |     3|
+|192   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized87  |     3|
+|193   |            \ramloop[89].ram.r                 |blk_mem_gen_prim_width__parameterized88         |     3|
+|194   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized88  |     3|
+|195   |            \ramloop[8].ram.r                  |blk_mem_gen_prim_width__parameterized7          |     4|
+|196   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized7   |     4|
+|197   |            \ramloop[90].ram.r                 |blk_mem_gen_prim_width__parameterized89         |     3|
+|198   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized89  |     3|
+|199   |            \ramloop[91].ram.r                 |blk_mem_gen_prim_width__parameterized90         |     3|
+|200   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized90  |     3|
+|201   |            \ramloop[92].ram.r                 |blk_mem_gen_prim_width__parameterized91         |     3|
+|202   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized91  |     3|
+|203   |            \ramloop[93].ram.r                 |blk_mem_gen_prim_width__parameterized92         |     3|
+|204   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized92  |     3|
+|205   |            \ramloop[94].ram.r                 |blk_mem_gen_prim_width__parameterized93         |     3|
+|206   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized93  |     3|
+|207   |            \ramloop[95].ram.r                 |blk_mem_gen_prim_width__parameterized94         |     3|
+|208   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized94  |     3|
+|209   |            \ramloop[96].ram.r                 |blk_mem_gen_prim_width__parameterized95         |     5|
+|210   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized95  |     5|
+|211   |            \ramloop[97].ram.r                 |blk_mem_gen_prim_width__parameterized96         |     3|
+|212   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized96  |     3|
+|213   |            \ramloop[98].ram.r                 |blk_mem_gen_prim_width__parameterized97         |     3|
+|214   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized97  |     3|
+|215   |            \ramloop[99].ram.r                 |blk_mem_gen_prim_width__parameterized98         |     2|
+|216   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized98  |     2|
+|217   |            \ramloop[9].ram.r                  |blk_mem_gen_prim_width__parameterized8          |     4|
+|218   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized8   |     4|
+|219   |  boll                                         |blk_mem_gen_1                                   |     1|
+|220   |    U0                                         |blk_mem_gen_v8_4_1__parameterized1              |     1|
+|221   |      inst_blk_mem_gen                         |blk_mem_gen_v8_4_1_synth__parameterized0        |     1|
+|222   |        \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top__parameterized0                 |     1|
+|223   |          \valid.cstr                          |blk_mem_gen_generic_cstr__parameterized0        |     1|
+|224   |            \ramloop[0].ram.r                  |blk_mem_gen_prim_width__parameterized104        |     1|
+|225   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized104 |     1|
+|226   |  overgame                                     |blk_mem_gen_2                                   |    23|
+|227   |    U0                                         |blk_mem_gen_v8_4_1__parameterized3              |    23|
+|228   |      inst_blk_mem_gen                         |blk_mem_gen_v8_4_1_synth__parameterized1        |    23|
+|229   |        \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top__parameterized1                 |    23|
+|230   |          \valid.cstr                          |blk_mem_gen_generic_cstr__parameterized1        |    23|
+|231   |            \bindec_a.bindec_inst_a            |bindec__parameterized0_1                        |     1|
+|232   |            \has_mux_a.A                       |blk_mem_gen_mux__parameterized1_2               |    15|
+|233   |            \ramloop[0].ram.r                  |blk_mem_gen_prim_width__parameterized105        |     1|
+|234   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized105 |     1|
+|235   |            \ramloop[1].ram.r                  |blk_mem_gen_prim_width__parameterized106        |     2|
+|236   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized106 |     2|
+|237   |            \ramloop[2].ram.r                  |blk_mem_gen_prim_width__parameterized107        |     2|
+|238   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized107 |     2|
+|239   |            \ramloop[3].ram.r                  |blk_mem_gen_prim_width__parameterized108        |     1|
+|240   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized108 |     1|
+|241   |            \ramloop[4].ram.r                  |blk_mem_gen_prim_width__parameterized109        |     1|
+|242   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized109 |     1|
+|243   |  wingame                                      |blk_mem_gen_3                                   |    23|
+|244   |    U0                                         |blk_mem_gen_v8_4_1__parameterized5              |    23|
+|245   |      inst_blk_mem_gen                         |blk_mem_gen_v8_4_1_synth__parameterized2        |    23|
+|246   |        \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top__parameterized2                 |    23|
+|247   |          \valid.cstr                          |blk_mem_gen_generic_cstr__parameterized2        |    23|
+|248   |            \bindec_a.bindec_inst_a            |bindec__parameterized0                          |     1|
+|249   |            \has_mux_a.A                       |blk_mem_gen_mux__parameterized1                 |    15|
+|250   |            \ramloop[0].ram.r                  |blk_mem_gen_prim_width__parameterized110        |     1|
+|251   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized110 |     1|
+|252   |            \ramloop[1].ram.r                  |blk_mem_gen_prim_width__parameterized111        |     2|
+|253   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized111 |     2|
+|254   |            \ramloop[2].ram.r                  |blk_mem_gen_prim_width__parameterized112        |     2|
+|255   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized112 |     2|
+|256   |            \ramloop[3].ram.r                  |blk_mem_gen_prim_width__parameterized113        |     1|
+|257   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized113 |     1|
+|258   |            \ramloop[4].ram.r                  |blk_mem_gen_prim_width__parameterized114        |     1|
+|259   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized114 |     1|
+|260   |  basic                                        |basic_rom                                       |     2|
+|261   |    U0                                         |blk_mem_gen_v8_4_1__parameterized7              |     2|
+|262   |      inst_blk_mem_gen                         |blk_mem_gen_v8_4_1_synth__parameterized3        |     2|
+|263   |        \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top__parameterized3                 |     2|
+|264   |          \valid.cstr                          |blk_mem_gen_generic_cstr__parameterized3        |     2|
+|265   |            \ramloop[0].ram.r                  |blk_mem_gen_prim_width__parameterized115        |     1|
+|266   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized115 |     1|
+|267   |            \ramloop[1].ram.r                  |blk_mem_gen_prim_width__parameterized116        |     1|
+|268   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized116 |     1|
+|269   |  normal                                       |normal_rom                                      |     2|
+|270   |    U0                                         |blk_mem_gen_v8_4_1__parameterized9              |     2|
+|271   |      inst_blk_mem_gen                         |blk_mem_gen_v8_4_1_synth__parameterized4        |     2|
+|272   |        \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top__parameterized4                 |     2|
+|273   |          \valid.cstr                          |blk_mem_gen_generic_cstr__parameterized4        |     2|
+|274   |            \ramloop[0].ram.r                  |blk_mem_gen_prim_width__parameterized117        |     1|
+|275   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized117 |     1|
+|276   |            \ramloop[1].ram.r                  |blk_mem_gen_prim_width__parameterized118        |     1|
+|277   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized118 |     1|
+|278   |  hard                                         |hard_rom                                        |     2|
+|279   |    U0                                         |blk_mem_gen_v8_4_1__parameterized11             |     2|
+|280   |      inst_blk_mem_gen                         |blk_mem_gen_v8_4_1_synth__parameterized5        |     2|
+|281   |        \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top__parameterized5                 |     2|
+|282   |          \valid.cstr                          |blk_mem_gen_generic_cstr__parameterized5        |     2|
+|283   |            \ramloop[0].ram.r                  |blk_mem_gen_prim_width__parameterized119        |     1|
+|284   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized119 |     1|
+|285   |            \ramloop[1].ram.r                  |blk_mem_gen_prim_width__parameterized120        |     1|
+|286   |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized120 |     1|
+|287   |  acceleration                                 |ADXL362Ctrl                                     |   684|
+|288   |    SPI_Interface                              |SPI_If                                          |    83|
+|289   |  bcd1                                         |bcd                                             |    35|
+|290   |  bcd2                                         |bcd_0                                           |    36|
+|291   |  disp                                         |dispnumber                                      |    44|
+|292   |  main                                         |vgac                                            |   378|
++------+-----------------------------------------------+------------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:14:23 ; elapsed = 00:14:32 . Memory (MB): peak = 1674.047 ; gain = 1369.258
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1310 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:56 ; elapsed = 00:14:15 . Memory (MB): peak = 1674.047 ; gain = 1369.258
+Synthesis Optimization Complete : Time (s): cpu = 00:14:23 ; elapsed = 00:14:32 . Memory (MB): peak = 1674.047 ; gain = 1369.258
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 633 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 19 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 40 instances were transformed.
+  LD => LDCE: 19 instances
+  LD => LDCE (inverted pins: G): 19 instances
+  LDCP => LDCP (GND, LUT3, LUT3, LDCE, VCC): 2 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+107 Infos, 221 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:14:30 ; elapsed = 00:14:39 . Memory (MB): peak = 1674.047 ; gain = 1380.723
+INFO: [Common 17-1381] The checkpoint 'C:/Users/alan/Desktop/Things/logic design/game/game.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 1674.047 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Jan  2 20:42:05 2018...

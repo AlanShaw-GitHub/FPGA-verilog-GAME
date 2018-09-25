@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Dec 28 23:58:48 2017
+# Process ID: 5824
+# Current directory: C:/Users/alan/Desktop/Things/game
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2076 C:\Users\alan\Desktop\Things\game\game.xpr
+# Log file: C:/Users/alan/Desktop/Things/game/vivado.log
+# Journal file: C:/Users/alan/Desktop/Things/game\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/alan/Desktop/Things/game/game.xpr
+update_compile_order -fileset sources_1

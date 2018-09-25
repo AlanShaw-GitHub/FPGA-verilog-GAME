@@ -1,0 +1,148 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Dec 25 20:57:33 2017
+# Process ID: 8256
+# Current directory: F:/game
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5584 F:\game\game.xpr
+# Log file: F:/game/vivado.log
+# Journal file: F:/game\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/game/game.xpr
+update_compile_order -fileset sources_1
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name blk_mem_gen_0 -dir f:/game/game.srcs/sources_1/ip
+set_property -dict [list CONFIG.Memory_Type {Single_Port_ROM} CONFIG.Write_Width_A {12} CONFIG.Write_Depth_A {350000} CONFIG.Read_Width_A {12} CONFIG.Write_Width_B {12} CONFIG.Read_Width_B {12} CONFIG.Load_Init_File {true} CONFIG.Coe_File {F:/game/coe/rom19.coe} CONFIG.Fill_Remaining_Memory_Locations {true} CONFIG.Port_A_Write_Rate {0}] [get_ips blk_mem_gen_0]
+generate_target {instantiation_template} [get_files f:/game/game.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
+update_compile_order -fileset sources_1
+set_property generate_synth_checkpoint false [get_files  f:/game/game.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
+generate_target all [get_files  f:/game/game.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
+export_ip_user_files -of_objects [get_files f:/game/game.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files f:/game/game.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci] -directory F:/game/game.ip_user_files/sim_scripts -ip_user_files_dir F:/game/game.ip_user_files -ipstatic_source_dir F:/game/game.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/game/game.cache/compile_simlib/modelsim} {questa=F:/game/game.cache/compile_simlib/questa} {riviera=F:/game/game.cache/compile_simlib/riviera} {activehdl=F:/game/game.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+get_param general.maxThreads
+set_param general.maxThreads 8
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+open_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {F:/game/game.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/game/game.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+close_design
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name blk_mem_gen_1 -dir f:/game/game.srcs/sources_1/ip
+set_property -dict [list CONFIG.Memory_Type {Single_Port_ROM} CONFIG.Write_Width_A {12} CONFIG.Write_Depth_A {8000} CONFIG.Read_Width_A {12} CONFIG.Write_Width_B {12} CONFIG.Read_Width_B {12} CONFIG.Load_Init_File {true} CONFIG.Coe_File {F:/game/coe/rom10.coe} CONFIG.Fill_Remaining_Memory_Locations {true} CONFIG.Port_A_Write_Rate {0}] [get_ips blk_mem_gen_1]
+generate_target {instantiation_template} [get_files f:/game/game.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci]
+update_compile_order -fileset sources_1
+set_property generate_synth_checkpoint false [get_files  f:/game/game.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci]
+generate_target all [get_files  f:/game/game.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci]
+export_ip_user_files -of_objects [get_files f:/game/game.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files f:/game/game.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci] -directory F:/game/game.ip_user_files/sim_scripts -ip_user_files_dir F:/game/game.ip_user_files -ipstatic_source_dir F:/game/game.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/game/game.cache/compile_simlib/modelsim} {questa=F:/game/game.cache/compile_simlib/questa} {riviera=F:/game/game.cache/compile_simlib/riviera} {activehdl=F:/game/game.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {F:/game/game.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/game/game.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+get_param  general.maxThreads
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {F:/game/game.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/game/game.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/game/game.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name blk_mem_gen_2 -dir f:/game/game.srcs/sources_1/ip
+set_property -dict [list CONFIG.Memory_Type {Single_Port_ROM} CONFIG.Write_Width_A {12} CONFIG.Write_Depth_A {350000} CONFIG.Read_Width_A {12} CONFIG.Write_Width_B {12} CONFIG.Read_Width_B {12} CONFIG.Load_Init_File {true} CONFIG.Coe_File {F:/game/coe/rom19defence.coe} CONFIG.Fill_Remaining_Memory_Locations {true} CONFIG.Port_A_Write_Rate {0}] [get_ips blk_mem_gen_2]
+generate_target {instantiation_template} [get_files f:/game/game.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2.xci]
+update_compile_order -fileset sources_1
+generate_target all [get_files  f:/game/game.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2.xci]
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_2] }
+export_ip_user_files -of_objects [get_files f:/game/game.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] f:/game/game.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2.xci]
+launch_runs -jobs 16 blk_mem_gen_2_synth_1
+export_simulation -of_objects [get_files f:/game/game.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2.xci] -directory F:/game/game.ip_user_files/sim_scripts -ip_user_files_dir F:/game/game.ip_user_files -ipstatic_source_dir F:/game/game.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/game/game.cache/compile_simlib/modelsim} {questa=F:/game/game.cache/compile_simlib/questa} {riviera=F:/game/game.cache/compile_simlib/riviera} {activehdl=F:/game/game.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -jobs 16
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/game/game.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {F:/game/game.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/game/game.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name blk_mem_gen_3 -dir f:/game/game.srcs/sources_1/ip
+set_property -dict [list CONFIG.Memory_Type {Single_Port_ROM} CONFIG.Write_Width_A {12} CONFIG.Write_Depth_A {350000} CONFIG.Read_Width_A {12} CONFIG.Write_Width_B {12} CONFIG.Read_Width_B {12} CONFIG.Load_Init_File {true} CONFIG.Coe_File {F:/game/coe/test.coe} CONFIG.Port_A_Write_Rate {0}] [get_ips blk_mem_gen_3]
+generate_target {instantiation_template} [get_files f:/game/game.srcs/sources_1/ip/blk_mem_gen_3/blk_mem_gen_3.xci]
+update_compile_order -fileset sources_1
+set_property generate_synth_checkpoint false [get_files  f:/game/game.srcs/sources_1/ip/blk_mem_gen_3/blk_mem_gen_3.xci]
+generate_target all [get_files  f:/game/game.srcs/sources_1/ip/blk_mem_gen_3/blk_mem_gen_3.xci]
